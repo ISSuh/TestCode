@@ -25,11 +25,11 @@ void Drived1::run() {
 }
 
 extern "C" Base* createModule() {
-  std::cout << "createModule\n";
+  std::cout << "createModule - 1\n";
   return new Drived1("TestNode1");
 }
 
 extern "C" void destroyModule(Base* node) {
-  std::cout << "destroyModule\n";
+  std::cout << "destroyModule - 1\n";
   delete node;
 }

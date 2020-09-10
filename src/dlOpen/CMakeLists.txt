@@ -11,8 +11,11 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY    ${BUILD_DIR_EXAMPLES}/dlOpen )
 #-------------------------------------------------------------------------------
 # Build Shared Library
 #-------------------------------------------------------------------------------
-add_library(myModule SHARED Drived1.cpp)
-set_target_properties(myModule PROPERTIES SOVERSION 1)
+add_library(myModule_1 SHARED Drived1.cpp)
+set_target_properties(myModule_1 PROPERTIES SOVERSION 1)
+
+add_library(myModule_2 SHARED Drived2.cpp)
+set_target_properties(myModule_2 PROPERTIES SOVERSION 1)
 
 #-------------------------------------------------------------------------------
 # Build
