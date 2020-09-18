@@ -4,6 +4,7 @@ message("Test Codes")
 
 SET ( SUBDIRS
     dlOpen
+    jsonWrapper
 )
 
 foreach(SUBDIR ${SUBDIRS})
